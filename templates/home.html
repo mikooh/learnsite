@@ -1,0 +1,14 @@
+<h1>Word Count</h1>
+
+<!-- action will tell us where to go once there's action on the button -->
+<!-- in action, we don't give the url page name directly because what if we change the name of the page? then it will disconnect from the url page. so, we pass in this variable 'count', which is also written as name='count' in the urls.py... and now the two are connected. we can change the name of the page. it won't matter. -->
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="5" name="fulltext"></textarea>
+    <br />
+    <input type="submit" value="Count!" name="" />
+
+</form>
+
+<a href="{% url 'about' %}" target="_blank">About me</a>
+
+
